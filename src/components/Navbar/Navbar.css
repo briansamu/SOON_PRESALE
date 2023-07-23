@@ -41,6 +41,10 @@
   text-transform: uppercase;
 }
 
+.navbar__nav-mobile {
+  display: none;
+}
+
 .navbar__right {
   width: 30%;
   align-items: center;
@@ -95,10 +99,14 @@
 
 @media (max-width: 1000px) {
   .navbar {
-
+    height: 100px;
   }
 
   .navbar__container {
     width: 600px;
+  }
+
+  .navbar__logo {
+    width: 80px;
   }
 }
