@@ -1,0 +1,19 @@
+.presale {
+    height: 600px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presale__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10rem;
+    color: #ffffff;
+}
