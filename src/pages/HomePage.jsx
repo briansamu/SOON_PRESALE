@@ -5,7 +5,7 @@ import PresaleSection from '../components/PresaleSection/PresaleSection';
 
 const HomePage = () => {
   return <>
-    <Navbar />
+    {/* <Navbar /> */}
     <PresaleSection />
     {/* <Web3Button icon='show' label='Connect Wallet' balance='show'/> */}
   </>;

@@ -1,5 +1,5 @@
 .presale {
-    height: 1100px;
+    height: fit-content;
     background-color: #333333;
     display: flex;
     justify-content: center;
@@ -24,6 +24,10 @@
 
 .presale__left {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .presale__right {
@@ -57,4 +61,37 @@
   color: #ffffff;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+  .presale__container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .presale {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .presale__container {
+    width: 600px;
+    flex-direction: column;
+  }
+
+  .presale__left {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .presale__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .presale__container {
+    width: 300px;
+  }
 }

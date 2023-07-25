@@ -116,3 +116,27 @@
   color: #185fcc;
   transition: 0.1s ease-in-out;
 }
+
+@media (max-width: 1400px) {
+  .presaleform {
+    width: 90%;
+  }
+
+  .presaleform__fullinput {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #earlybirdround {
+    font-size: 36px;
+  }
+
+  #priceoutof1 {
+    font-size: 12px;
+  }
+
+  .presaleform__bar {
+    font-size: 8px;
+  }
+}
