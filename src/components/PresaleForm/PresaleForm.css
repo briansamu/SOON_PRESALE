@@ -9,11 +9,10 @@
 
 #earlybirdround {
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 56px;
   letter-spacing: 1.5px;
-  font-family: Anton, 'sans-serif';
-  color: #ffffff;
-  -webkit-text-stroke: #000000 2px;
+  font-family: Franchise, 'sans-serif';
+  color: #000000;
 }
 
 #priceoutof1 {

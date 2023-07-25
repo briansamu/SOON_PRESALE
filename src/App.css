@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Franchise';
+  src: local('Franchise'), url('../public/assets/Franchise.ttf');
+}
