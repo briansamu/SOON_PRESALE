@@ -1,4 +1,5 @@
 import PresaleForm from '../PresaleForm/PresaleForm';
+import PresaleValue from '../PresaleValue/PresaleValue';
 import './PresaleSection.css';
 
 const Presale = () => {
@@ -6,6 +7,7 @@ const Presale = () => {
     <div className="presale__container">
         <div className="presale__left">
           <PresaleForm />
+          <PresaleValue />
         </div>
         <div className="presale__right">
           <img src="../../assets/morecomingsoon.png" alt="Image" />

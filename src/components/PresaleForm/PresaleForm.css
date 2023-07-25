@@ -76,7 +76,7 @@
   padding: 15px 20px;
   width: 100%;
   border-radius: 50px;
-  border: #185FCC 2px solid !important;
+  border: #185FCC 1px solid !important;
   z-index: 10;
   border: none;
 }
