@@ -1,0 +1,57 @@
+.presale {
+    height: 1100px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/presale-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.presale__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 1400px;
+}
+
+.presale__left {
+  width: 50%;
+}
+
+.presale__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.presale__right img {
+  width: 80%;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+
+.presale__right-textwrapper {
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.presale__right-textwrapper h3 {
+  font-size: 36px;
+  font-family: Anton, 'sans-serif';
+  color: #000000;
+  letter-spacing: 1.5px;
+  -webkit-text-stroke: #ffffff 1px;
+}

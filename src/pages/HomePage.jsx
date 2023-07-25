@@ -1,12 +1,12 @@
 import Navbar from '../components/Navbar/Navbar';
-import Presale from '../components/Presale/Presale';
+import PresaleSection from '../components/PresaleSection/PresaleSection';
 
 // import { Web3Button } from "@web3modal/react";
 
 const HomePage = () => {
   return <>
     <Navbar />
-    <Presale />
+    <PresaleSection />
     {/* <Web3Button icon='show' label='Connect Wallet' balance='show'/> */}
   </>;
 };
