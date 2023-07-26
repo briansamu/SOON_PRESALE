@@ -26,7 +26,7 @@ const Navbar = () => {
           <li><a href="#!" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
           <li><a href="https://discord.gg/vw6Hhu8DH7" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faDiscord} /></a></li>
         </ul>
-        <Web3Button className="web3button" icon='show' label='Connect Wallet' balance='hide'/>
+        <Web3Button className="web3button" icon='hide' label='Connect Wallet' balance='hide'/>
       </div>
     </div>
   </div>;

@@ -1,0 +1,30 @@
+.attractivefeatures {
+    background-color: #162741;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#attractivefeaturesh3 {
+    font-family: Franchise, 'sans-serif';
+    color: #ffffff;
+    font-size: 56px;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1000px) {
+    #attractivefeaturesh3 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 600px) {
+
+}
