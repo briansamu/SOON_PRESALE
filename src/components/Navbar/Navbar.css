@@ -109,21 +109,14 @@
   .navbar__logo {
     width: 80px;
   }
-}
-
-@media (max-width: 600px) {
-  .navbar__container {
-    width: 400px;
-    align-items: center;
-  }
 
   .navbar__nav {
     display: none;
   }
 
   .navbar__left {
-    width: 45%;
     justify-content: space-between;
+    width: 70%;
   }
 
   .navbar__hamburger {
@@ -134,7 +127,30 @@
   }
 
   .navbar__right {
-    width: 45%;
+    width: 30%;
     justify-content: end;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 80px
+  }
+
+  .navbar__container {
+    width: 400px;
+    align-items: center;
+  }
+
+  .navbar__logo {
+    width: 60px;
+  }
+
+  .navbar__left {
+    width: 45%;
+  }
+
+  .navbar__right {
+    width: 45%;
   }
 }
