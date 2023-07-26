@@ -34,3 +34,29 @@
   width: 25%;
   border-radius: 50px;
 }
+
+@media (max-width: 1400px) {
+  .whitepapersection__container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .whitepapersection__container {
+    width: 600px;
+  }
+
+  #whitepaperh3 {
+    font-size: 44px;
+  }
+
+  .whitepaper-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .whitepapersection__container {
+    width: 400px;
+  }
+}
