@@ -133,10 +133,18 @@
   }
 
   #priceoutof1 {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  
+  .presaleform__p-bold {
+    font-size: 14px;
   }
 
   .presaleform__bar {
     font-size: 8px;
+  }
+
+  .presaleform__label {
+    right: -17%;
   }
 }

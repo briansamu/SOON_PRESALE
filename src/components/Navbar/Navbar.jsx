@@ -1,6 +1,7 @@
 import { Web3Button } from "@web3modal/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -17,6 +18,7 @@ const Navbar = () => {
             <li><a href="">Contact Us</a></li>
           </ul>
         </nav>
+        <button className="navbar__hamburger"><FontAwesomeIcon icon={faBars} /></button>
       </div>
       <div className="navbar__right">
         <ul>

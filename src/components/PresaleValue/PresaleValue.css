@@ -102,4 +102,8 @@
   #valueh3 {
     font-size: 36px;
   }
+
+  .presalevalue__label {
+    right: -13%;
+  }
 }
