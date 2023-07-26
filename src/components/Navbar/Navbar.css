@@ -134,12 +134,14 @@
 
 @media (max-width: 600px) {
   .navbar {
-    height: 80px
+    height: 80px;
+    padding: 0;
   }
 
   .navbar__container {
     width: 400px;
     align-items: center;
+    justify-content: center;
   }
 
   .navbar__logo {
