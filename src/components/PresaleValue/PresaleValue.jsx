@@ -6,7 +6,7 @@ const PresaleValue = () => {
         <p id='amountp'>Amount $1000 / $0.00001</p>
 
         <div className="presalevalue__fullinput">
-          <input className='presalevalue__input' name="usdc-input"></input>
+          <input type='number' className='presalevalue__input' name="usdc-input"></input>
           <label className='presalevalue__label' htmlFor="usdc-input">SOON</label>
         </div>
 

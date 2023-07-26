@@ -24,12 +24,12 @@ const PresaleForm = () => {
 
       <div className="presaleform__form-inputwrapper">
         <div className="presaleform__fullinput">
-          <input className='presaleform__input' name="usdc-input"></input>
+          <input type='number' className='presaleform__input' name="usdc-input"></input>
           <label className='presaleform__label' htmlFor="usdc-input">USDC</label>
         </div>
 
         <div className="presaleform__fullinput">
-          <input className='presaleform__input' name="soon-input"></input>
+          <input type='number' className='presaleform__input' name="soon-input"></input>
           <label className='presaleform__label' htmlFor="soon-input">$Soon</label>
         </div>
       </div>
