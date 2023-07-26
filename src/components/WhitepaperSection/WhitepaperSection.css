@@ -1,4 +1,36 @@
 .whitepapersection {
     height: 250px;
     background-color: #0E1F3A;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.whitepapersection__container {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+#whitepaperh3 {
+  font-size: 56px;
+  color: #ffffff;
+  font-family: Franchise, 'sans-serif';
+}
+
+.whitepaper-btn {
+  text-transform: uppercase;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Rubik, 'sans-serif';
+  border: #ffffff 1px solid;
+  width: 25%;
+  border-radius: 50px;
 }

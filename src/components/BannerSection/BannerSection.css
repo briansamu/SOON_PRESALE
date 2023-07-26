@@ -1,3 +1,13 @@
 .bannersection {
-    height: 900px;
+    height: fit-content;
+    background-color: #0E1F3A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannersection-img {
+  width: 60%;
+  height: auto;
+  margin-top: 40px;
 }
