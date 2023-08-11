@@ -151,7 +151,6 @@
 
   .navbar__left {
     width: 50%;
-    flex-direction: row-reverse;
   }
 
   .navbar__right {
