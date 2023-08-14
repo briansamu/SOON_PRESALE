@@ -50,23 +50,23 @@
 }
 
 #redcircle {
-  background-color: red;
+  background-color: #B41717;
 }
 
 #orangecircle {
-  background-color: orange;
+  background-color: #FB9924;
 }
 
 #yellowcircle {
-  background-color: yellow;
+  background-color: #EBEF33;
 }
 
 #greencircle {
-  background-color: green;
+  background-color: #139337;
 }
 
 #bluecircle {
-  background-color: blue;
+  background-color: #6AA6FC;
 }
 
 @media (max-width: 1400px) {
