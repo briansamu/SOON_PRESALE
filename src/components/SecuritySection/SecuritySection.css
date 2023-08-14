@@ -37,9 +37,11 @@
 .security-btn {
   text-transform: uppercase;
   padding: 20px 0;
-  color: #ffffff;
+  color: #1B5F72;
+  font-weight: 600;
   font-family: Rubik, 'sans-serif';
   border: #ffffff 1px solid;
+  background-color: #ffffff;
   width: 300px;
   border-radius: 50px;
   margin-top: 40px;
