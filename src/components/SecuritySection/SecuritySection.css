@@ -1,0 +1,46 @@
+.securitysection {
+  height: fit-content;
+  background-color: #1B5F72;
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+  font-family: Rubik, 'sans-serif';
+}
+
+.security-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.security-icon {
+  font-size: 48px;
+}
+
+.security-h5 {
+  font-family: Franchise, 'sans-serif';
+  font-size: 56px;
+  margin-top: 20px;
+}
+
+.security-p {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+.security-btn {
+  text-transform: uppercase;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Rubik, 'sans-serif';
+  border: #ffffff 1px solid;
+  width: 25%;
+  border-radius: 50px;
+  margin-top: 40px;
+}
