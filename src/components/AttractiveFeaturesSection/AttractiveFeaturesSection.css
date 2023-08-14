@@ -110,6 +110,7 @@
 @media (max-width: 600px) {
   .af-container {
     width: 400px;
+    padding: 0 20px;
   }
 
   .af-featuresgrid {

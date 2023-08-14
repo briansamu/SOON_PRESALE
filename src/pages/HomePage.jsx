@@ -4,6 +4,7 @@ import BannerSection from '../components/BannerSection/BannerSection';
 import WhitepaperSection from '../components/WhitepaperSection/WhitepaperSection';
 import AttractiveFeaturesSection from '../components/AttractiveFeaturesSection/AttractiveFeaturesSection';
 import SecuritySection from '../components/SecuritySection/SecuritySection';
+import ColorCoinSection from '../components/ColorCoinSection/ColorCoinSection';
 
 // import { Web3Button } from "@web3modal/react";
 
@@ -15,6 +16,7 @@ const HomePage = () => {
     <WhitepaperSection />
     <AttractiveFeaturesSection />
     <SecuritySection />
+    <ColorCoinSection />
     {/* <Web3Button icon='show' label='Connect Wallet' balance='show'/> */}
   </>;
 };
