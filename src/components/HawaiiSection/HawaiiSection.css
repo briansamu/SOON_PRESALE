@@ -16,7 +16,7 @@
 .hawaii-img {
   width: 100%;
   height: 1000px;
-  background: url('./assets/hawaii.png');
+  background: url('../assets/hawaii.png');
   background-size: cover;
   background-position: center;
 }
