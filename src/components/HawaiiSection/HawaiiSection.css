@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 1000px) {
+  .hawaii-img {
+    height: 600px;
+  }
+
   .hawaii-container {
     width: 600px;
   }
