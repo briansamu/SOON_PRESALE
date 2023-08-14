@@ -90,13 +90,24 @@
     font-size: 44px;
   }
 
+  .ccs-p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
   .ccs-colors {
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
+  }
+
+  .ccs-circle {
+    height: 120px;
+    width: 120px;
   }
 
   .ccs-coloritem {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     width: 100%;
   }
 
