@@ -6,6 +6,7 @@ import AttractiveFeaturesSection from '../components/AttractiveFeaturesSection/A
 import SecuritySection from '../components/SecuritySection/SecuritySection';
 import ColorCoinSection from '../components/ColorCoinSection/ColorCoinSection';
 import HawaiiSection from '../components/HawaiiSection/HawaiiSection';
+import FooterSection from '../components/FooterSection/FooterSection';
 
 // import { Web3Button } from "@web3modal/react";
 
@@ -19,6 +20,7 @@ const HomePage = () => {
     <SecuritySection />
     <ColorCoinSection />
     <HawaiiSection />
+    <FooterSection />
     {/* <Web3Button icon='show' label='Connect Wallet' balance='show'/> */}
   </>;
 };
