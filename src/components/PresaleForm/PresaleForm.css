@@ -88,7 +88,7 @@
   width: 30%;
   position: absolute;
   top: 50%;
-  right: -20%;
+  right: -15%;
   transform: translate(-50%, -50%);
   z-index: 0;
 }

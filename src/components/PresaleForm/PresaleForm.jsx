@@ -1,9 +1,18 @@
 import './PresaleForm.css'
 
+import { useState } from 'react';
+
 const PresaleForm = () => {
+  const [amount, setAmount] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (amount == 0 || amount == '') {
+      console.log('Invalid Number!')
+      return;
+    }
+
+    console.log(amount);
   }
 
   return <div className="presaleform">
@@ -24,12 +33,12 @@ const PresaleForm = () => {
 
       <div className="presaleform__form-inputwrapper">
         <div className="presaleform__fullinput">
-          <input type='number' className='presaleform__input' name="usdc-input"></input>
+          <input type='number' className='presaleform__input' name="usdc-input" onChange={(e) => setAmount(e.target.value)} value={amount}></input>
           <label className='presaleform__label' htmlFor="usdc-input">USDC</label>
         </div>
 
         <div className="presaleform__fullinput">
-          <input type='number' className='presaleform__input' name="soon-input"></input>
+          <input disabled type='number' className='presaleform__input' name="soon-input"></input>
           <label className='presaleform__label' htmlFor="soon-input">$Soon</label>
         </div>
       </div>
