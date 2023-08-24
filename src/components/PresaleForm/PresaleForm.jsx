@@ -3,7 +3,14 @@ import './PresaleForm.css'
 import { useState } from 'react';
 
 const PresaleForm = () => {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
+  const [soonAmount, setSoonAmount] = useState();
+
+  const handleInput = (e) => {
+    setAmount = e.target.value;
+    setSoonAmount = e.target.value / 0.00001;
+    console.log(soonAmount);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,12 +40,12 @@ const PresaleForm = () => {
 
       <div className="presaleform__form-inputwrapper">
         <div className="presaleform__fullinput">
-          <input type='number' className='presaleform__input' name="usdc-input" onChange={(e) => setAmount(e.target.value)} value={amount}></input>
+          <input type='number' className='presaleform__input' name="usdc-input" onChange={handleInput} value={amount}></input>
           <label className='presaleform__label' htmlFor="usdc-input">USDC</label>
         </div>
 
         <div className="presaleform__fullinput">
-          <input disabled type='number' className='presaleform__input' name="soon-input"></input>
+          <input id='soon-input' disabled type='number' className='presaleform__input' name="soon-input" value={soonAmount}></input>
           <label className='presaleform__label' htmlFor="soon-input">$Soon</label>
         </div>
       </div>
