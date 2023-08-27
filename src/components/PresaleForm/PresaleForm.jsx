@@ -7,8 +7,8 @@ const PresaleForm = () => {
   const [soonAmount, setSoonAmount] = useState();
 
   const handleInput = (e) => {
-    setAmount = e.target.value;
-    setSoonAmount = e.target.value / 0.00001;
+    setAmount(e.target.value);
+    setSoonAmount(Math.round(e.target.value / 0.00001));
     console.log(soonAmount);
   }
 
