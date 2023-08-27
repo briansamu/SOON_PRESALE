@@ -1,5 +1,7 @@
 import './PresaleForm.css'
 
+import { Web3Button } from '@thirdweb-dev/react';
+
 import { useState } from 'react';
 
 const PresaleForm = () => {
@@ -54,7 +56,12 @@ const PresaleForm = () => {
         <p className='presaleform__p-bold'>**Must make request ticket for Hawaii Whitelist**</p>
         <p className='presaleform__p-bold'>LIMITED TO FIRST 100 SPOTS</p>
       </div>
-      <button type='submit' className='presaleform__buynowbtn'>Buy Now</button>
+      {/* <button type='submit' className='presaleform__buynowbtn'>Buy Now</button> */}
+      <Web3Button
+      contractAddress='0x7Ad696FC88B9Cc87c138859F0623872feFa08F56'
+      contractAbi={[{"inputs":[{"internalType":"address","name":"_singleton","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"stateMutability":"payable","type":"fallback"}]}
+      action={async (contract) => console.log(contract)}
+      >Pop Off</Web3Button>
     </form>
   </div>;
 };
