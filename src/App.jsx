@@ -28,7 +28,7 @@ function App() {
     <>
       {/* <WagmiConfig config={wagmiConfig}> */}
       <QueryClientProvider client={queryClient}>
-      <ThirdwebProvider clientId='8aabaf654adf254b535c1f3d40c95646' activeChain="ethereum" queryClient={queryClient}>
+      <ThirdwebProvider clientId='1281d76cf6b180a329d018e5e03a8b1c' activeChain="ethereum" queryClient={queryClient}>
         <HomePage />
       </ThirdwebProvider>
       </QueryClientProvider>

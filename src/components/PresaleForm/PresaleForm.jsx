@@ -58,9 +58,15 @@ const PresaleForm = () => {
       </div>
       {/* <button type='submit' className='presaleform__buynowbtn'>Buy Now</button> */}
       <Web3Button
-      contractAddress='0x7Ad696FC88B9Cc87c138859F0623872feFa08F56'
-      contractAbi={[{"inputs":[{"internalType":"address","name":"_singleton","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"stateMutability":"payable","type":"fallback"}]}
-      action={async (contract) => console.log(contract)}
+      contractAddress='0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+      action={async (contract) => {
+        try {
+          await contract.call("transfer", ['0x7Ad696FC88B9Cc87c138859F0623872feFa08F56', amount])
+        } catch (err) {
+          alert(err)
+        }
+        
+      }}
       >Pop Off</Web3Button>
     </form>
   </div>;
