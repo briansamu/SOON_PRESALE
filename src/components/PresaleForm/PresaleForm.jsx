@@ -1,12 +1,23 @@
 import './PresaleForm.css'
 
-import { Web3Button } from '@thirdweb-dev/react';
+import { usePrepareSendTransaction, useSendTransaction } from 'wagmi';
+import { parseEther } from 'viem';
 
 import { useState } from 'react';
+import { useDebounce } from 'use-debounce';
 
 const PresaleForm = () => {
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState('1');
   const [soonAmount, setSoonAmount] = useState();
+
+  const [debouncedAmount] = useDebounce(amount, 500);
+
+  const {config} = usePrepareSendTransaction({
+    to: '0x7Ad696FC88B9Cc87c138859F0623872feFa08F56',
+    value: debouncedAmount,
+  })
+
+  const {sendTransaction} = useSendTransaction(config);
 
   const handleInput = (e) => {
     setAmount(e.target.value);
@@ -21,6 +32,7 @@ const PresaleForm = () => {
       return;
     }
 
+    sendTransaction?.()
     console.log(amount);
   }
 
@@ -56,12 +68,7 @@ const PresaleForm = () => {
         <p className='presaleform__p-bold'>**Must make request ticket for Hawaii Whitelist**</p>
         <p className='presaleform__p-bold'>LIMITED TO FIRST 100 SPOTS</p>
       </div>
-      {/* <button type='submit' className='presaleform__buynowbtn'>Buy Now</button> */}
-      <Web3Button
-      contractAddress='0x7Ad696FC88B9Cc87c138859F0623872feFa08F56'
-      contractAbi={[{"inputs":[{"internalType":"address","name":"_singleton","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"stateMutability":"payable","type":"fallback"}]}
-      action={async (contract) => console.log(contract)}
-      >Pop Off</Web3Button>
+      <button type='submit' className='presaleform__buynowbtn'>Buy Now</button>
     </form>
   </div>;
 };
