@@ -2,7 +2,7 @@
   background-color: #ffffff;
   width: 45%;
   border-radius: 15px;
-  height: 800px;
+  height: fit-content;
   text-align: center;
   font-family: Rubik, 'sans-serif';
   display: flex;
