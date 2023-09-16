@@ -88,6 +88,24 @@
   transition: 0.1s ease-in-out;
 }
 
+.newsletter__alert-sending {
+  margin-top: 20px;
+  color: #000000;
+  width: 80%;
+}
+
+.newsletter__alert-error {
+  margin-top: 20px;
+  color: red;
+  width: 80%;
+}
+
+.newsletter__alert-success {
+  margin-top: 20px;
+  color: green;
+  width: 80%;
+}
+
 @media (max-width: 1400px) {
   .newsletterform {
     width: 60%;
@@ -112,5 +130,11 @@
 @media (max-width: 600px) {
   .newsletterform {
     width: 95%;
+  }
+
+  .newsletter__label {
+    width: 100%;
+    top: -20%;
+    left: 57%;
   }
 }
