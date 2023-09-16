@@ -82,6 +82,10 @@
     height: fit-content;
   }
 
+  .studio-img {
+    margin-top: 20px;
+  }
+
   .presale__container {
     width: 600px;
     flex-direction: column;
