@@ -41,6 +41,10 @@
   text-transform: uppercase;
 }
 
+.navbar__close {
+  display: none;
+}
+
 .navbar__hamburger {
   display: none;
 }
@@ -114,8 +118,41 @@
     width: 80px;
   }
 
+  /* RESPONSIVE NAV */
   .navbar__nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #0B2554;
+    margin: 0;
+    transition: .5s;
+    transform: translateY(-100vh);
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .navbar__nav ul li {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
+  .navbar__close {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    color: #ffffff;
+    font-size: 30px;
   }
 
   .navbar__left {

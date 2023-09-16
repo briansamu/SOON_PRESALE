@@ -1,15 +1,23 @@
 import { Web3Button } from "@web3modal/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faDiscord, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import { useRef } from "react";
 
 const Navbar = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
+
   return <div className="navbar">
     <div className="navbar__container">
       <div className="navbar__left">
         <img className="navbar__logo" src="./assets/soonlogo.png" alt="Soon Token Logo" />
-        <nav className="navbar__nav">
+        <nav ref={navRef} className="navbar__nav">
+          <button onClick={showNavbar} className="navbar__close"><FontAwesomeIcon icon={faX} /></button>
           <ul>
             <li><a href="#!">How It Works</a></li>
             <li><a href="#!">Tokenomics</a></li>
@@ -18,7 +26,7 @@ const Navbar = () => {
             <li><a href="">Contact Us</a></li>
           </ul>
         </nav>
-        <button className="navbar__hamburger"><FontAwesomeIcon icon={faBars} /></button>
+        <button onClick={showNavbar} className="navbar__hamburger"><FontAwesomeIcon icon={faBars} /></button>
       </div>
       <div className="navbar__right">
         <ul>
