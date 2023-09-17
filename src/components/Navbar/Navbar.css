@@ -157,7 +157,7 @@
 
   .navbar__left {
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
   }
 
   .navbar__hamburger {
@@ -167,7 +167,7 @@
   }
 
   .navbar__right {
-    width: 30%;
+    width: 0;
     justify-content: end;
   }
 }
