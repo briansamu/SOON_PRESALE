@@ -187,10 +187,10 @@
   }
 
   .navbar__left {
-    width: 50%;
+    width: 90%;
   }
 
   .navbar__right {
-    width: 40%;
+    width: 0;
   }
 }
