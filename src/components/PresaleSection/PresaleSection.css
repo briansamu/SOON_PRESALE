@@ -31,6 +31,11 @@
   flex-direction: column;
 }
 
+.studio-img {
+  width: 80%;
+  border-radius: 50px;
+}
+
 .presale__right {
   width: 50%;
   height: 100%;
@@ -75,6 +80,10 @@
     flex-direction: column;
     overflow: hidden;
     height: fit-content;
+  }
+
+  .studio-img {
+    margin-top: 20px;
   }
 
   .presale__container {
