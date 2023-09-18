@@ -23,7 +23,7 @@ import {
 
 
 const PresaleForm = () => {
-  const [amount, setAmount] = useState('10');
+  const [amount, setAmount] = useState('50');
   const [soonAmount, setSoonAmount] = useState('1000000');
 
   const [buyMethod, setBuyMethod] = useState("usdc")

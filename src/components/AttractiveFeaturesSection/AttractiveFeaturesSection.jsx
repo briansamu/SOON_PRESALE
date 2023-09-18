@@ -6,7 +6,7 @@ const AttractiveFeaturesSection = () => {
   return <div className='af-section'>
     <div className="af-container">
       <h3 id='af-h3'>Attractive Features</h3>
-      <p id='af-p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae!</p>
+      <p id='af-p'>More MEME than you can handle</p>
     </div>
     <div className="af-container">
       <div className="af-featuresgrid">
