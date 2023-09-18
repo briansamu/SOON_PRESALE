@@ -144,7 +144,7 @@ const PresaleForm = () => {
   console.log("A_USDC", allowanceUsdc);
   console.log("P_TOKEN", balanceToken?.toString());
   console.log("F_USDC", balanceUSDC?.toString());
-  console.log("%%%", parseInt(utils.formatUnits(balanceUSDC, usdcDecimal-2) / 10504441))
+  console.log("%%%", balanceUSDC && parseInt(utils.formatUnits(balanceUSDC, usdcDecimal-2) / 10504441))
 
   return <div className="presaleform">
     <div className='presaleform__form'>
