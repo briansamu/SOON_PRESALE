@@ -20,7 +20,7 @@ const Navbar = () => {
           <ul>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Tokenomics</a></li>
-            <li><a href="#">Whitepaper</a></li>
+            <li><a href="https://cdn.discordapp.com/attachments/1111826017754042458/1153461911124451408/Whitepaper.pdf">Whitepaper</a></li>
             <li><a href="#">Hawaii Whitelist</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
