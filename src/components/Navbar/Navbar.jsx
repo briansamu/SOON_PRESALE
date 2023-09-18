@@ -20,9 +20,9 @@ const Navbar = () => {
           <ul>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Tokenomics</a></li>
-            <li><a href="">Whitepaper</a></li>
-            <li><a href="">Hawaii Whitelist</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#">Whitepaper</a></li>
+            <li><a href="#">Hawaii Whitelist</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
         <button onClick={showNavbar} className="navbar__hamburger"><FontAwesomeIcon icon={faBars} /></button>
