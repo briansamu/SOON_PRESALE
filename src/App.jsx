@@ -27,7 +27,7 @@ function App() {
     <>
       <WagmiConfig config={wagmiConfig}>
         <QueryClientProvider client={queryClient}>
-          <ThirdwebProvider clientId='1281d76cf6b180a329d018e5e03a8b1c' activeChain="ethereum" queryClient={queryClient}> 
+          <ThirdwebProvider clientId='ae4efc1f98b3bdc61212a6b5fefe5a16' activeChain="ethereum" queryClient={queryClient}> 
             
             <HomePage />
             <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />

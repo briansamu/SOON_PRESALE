@@ -89,7 +89,6 @@ const PresaleForm = () => {
         }
         
       }}
-      onError={(error) => alert(error)}
       >Buy</Web3Button>
     </form>
   </div>;
