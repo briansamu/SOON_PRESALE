@@ -85,7 +85,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 const NewsletterForm = () => {
 
-  const postUrl = `https://samuinteractive.us17.list-manage.com/subscribe/post?u=cbfff5a49b3509396b5f0b352&id=1072771a50`
+  const postUrl = `https://finance.us8.list-manage.com/subscribe/post?u=9c86cc3884c3911db10b082b9&id=9cccf00f83`
 
   return (
     <MailchimpSubscribe
