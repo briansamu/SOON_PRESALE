@@ -29,9 +29,9 @@ const Navbar = () => {
       </div>
       <div className="navbar__right">
         <ul>
-          <li><a href="https://www.youtube.com/channel/UCLPOA4unRLumxGb2vtOpv7w" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
-          <li><a href="https://www.instagram.com/thewenshow" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
-          <li><a href="https://www.twitter.com/wensooncoin" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
+          <li><a href="https://www.youtube.com/channel/UCLPOA4unRLumxGb2vtOpv7w" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} /></a></li>
+          <li><a href="https://www.instagram.com/thewenshow" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
+          <li><a href="https://www.twitter.com/wensooncoin" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
           <li><a href="https://discord.gg/vw6Hhu8DH7" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faDiscord} /></a></li>
         </ul>
       </div>
