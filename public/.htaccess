@@ -6,4 +6,9 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
+
+  <!-- HTTPS Redirect -->
+  RewriteEngine On
+  RewriteCond %{SERVER_PORT} 80
+  RewriteRule ^(.*)$ https://www.wen.finance/$1 [R,L]
 </IfModule>
