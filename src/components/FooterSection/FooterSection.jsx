@@ -24,7 +24,7 @@ const FooterSection = () => {
       </div>
 
       <div className="footer-email">
-        <a href="mailto:wensoon.official@gmail.com">contact@wen.finance</a>
+        <a href="mailto:contact@wen.finance">contact@wen.finance</a>
       </div>
     </div>
   </div>;
