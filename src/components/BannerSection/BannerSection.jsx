@@ -2,7 +2,7 @@ import './BannerSection.css';
 
 const BannerSection = () => {
     return <div className='bannersection'>
-        <img className='bannersection-img' src="./assets/soongraphic.png" alt="soon graphic" />
+        <img className='bannersection-img' src="./assets/Soona1.png" alt="soon graphic" />
     </div>
 }
 
