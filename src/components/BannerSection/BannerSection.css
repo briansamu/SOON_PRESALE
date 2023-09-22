@@ -9,5 +9,16 @@
 .bannersection-img {
   width: 30%;
   height: auto;
-  margin-top: -80px;
+}
+
+@media (max-width: 1400px) {
+  .bannersection-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bannersection-img {
+    width: 80%;
+  }
 }
