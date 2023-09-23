@@ -32,6 +32,14 @@ const PresaleForm = () => {
   const { switchNetwork } = useSwitchNetwork()
   const { chain } = useNetwork()
 
+  const toBN = (amount, decimal) => {
+    if (amount === '') {
+      return 0
+    } else {
+      return utils.parseUnits(amount, decimal)
+    }
+  }
+
   const { data: allowanceUsdc } = useContractRead({
     address: usdcAddress,
     abi: ERC20_ABI,
@@ -66,7 +74,7 @@ const PresaleForm = () => {
     address: usdcAddress,
     abi: ERC20_ABI,
     functionName: "approve", 
-    args: [presaleAddress, utils.parseUnits(amount, usdcDecimal).toString()],
+    args: [presaleAddress, toBN(amount, usdcDecimal).toString()],
     enabled: !!account  && buyMethod == "usdc" && chain && chain?.id == ETHChainId && !!amount
   })
 
@@ -84,8 +92,8 @@ const PresaleForm = () => {
     address: presaleAddress,
     abi: PRESALE_ABI,
     functionName: "buyTokensByUSDC",
-    args: [utils.parseUnits(amount, usdcDecimal).toString()],
-    enabled: !!account && allowanceUsdc && amount && BigNumber.from(allowanceUsdc).gte(utils.parseUnits(amount, usdcDecimal)) 
+    args: [toBN(amount, usdcDecimal).toString()],
+    enabled: !!account && allowanceUsdc && amount && BigNumber.from(allowanceUsdc).gte(toBN(amount, usdcDecimal)) 
   })
 
   const { data: buyWithUsdcData, write: buyWithUsdcFn ,reset : buyWithUsdcReset} = useContractWrite(
@@ -103,7 +111,7 @@ const PresaleForm = () => {
     abi: PRESALE_ABI,
     functionName: "buyTokensByETH",
     overrides: { value: amount },
-    enabled: !!account && buyMethod == "eth" && chain?.id == ETHChainId
+    enabled: !!account && buyMethod == "eth" && chain?.id == ETHChainId && !!amount
   })
 
   const { data: buyWithEthData, write: buyWithEthFn, reset : buyWithEthReset } = useContractWrite(
@@ -115,13 +123,16 @@ const PresaleForm = () => {
   })
 
   const handleInput = (e) => {
-    console.log("target value", e.target.value);
+    // console.log("target value", e.target.value);
     let v = e.target.value;
+
+    setAmount(v);
     if (v) {
-      setAmount(v);
       setSoonAmount(Math.round(v / 0.00001));
-      console.log(soonAmount);
+    } else {
+      setSoonAmount(v);
     }
+
   }
 
   useEffect(() => {
@@ -179,8 +190,6 @@ const PresaleForm = () => {
         <p className='presaleform__p-bold'>**Must make request ticket for Hawaii Whitelist**</p>
         <p className='presaleform__p-bold'>LIMITED TO FIRST 100 SPOTS</p>
       </div>
-      {/* <button type='submit' className='presaleform__buynowbtn'
-      >Buy Now</button> */}
 
       {!account ? (
         <>
@@ -199,7 +208,7 @@ const PresaleForm = () => {
           )}
 
           {buyMethod == "usdc" && allowanceUsdc != undefined &&
-            BigNumber.from(allowanceUsdc).lt(utils.parseUnits(amount, usdcDecimal)) && (
+            BigNumber.from(allowanceUsdc).lt(toBN(amount, usdcDecimal)) && (
               <button
                 className="presaleform__buynowbtn"
                 onClick={() => approveUsdcFn?.()}
@@ -209,7 +218,7 @@ const PresaleForm = () => {
             )}
 
           {buyMethod == "usdc" && !!allowanceUsdc &&
-            BigNumber.from(allowanceUsdc).gte(utils.parseUnits(amount, usdcDecimal)) && (
+            BigNumber.from(allowanceUsdc).gte(toBN(amount, usdcDecimal)) && (
             <button
               type="button"
               className="presaleform__buynowbtn"
