@@ -23,8 +23,8 @@ import {
 
 
 const PresaleForm = () => {
-  const [amount, setAmount] = useState('50');
-  const [soonAmount, setSoonAmount] = useState('1000000');
+  const [amount, setAmount] = useState('0');
+  const [soonAmount, setSoonAmount] = useState('');
 
   const [buyMethod, setBuyMethod] = useState("usdc")
   const {  address : account, isConnecting, isDisconnected,isConnected } = useAccount()
@@ -171,7 +171,9 @@ const PresaleForm = () => {
         <p className='presaleform__p-bold'>{`USDC $${balanceUSDC && utils.formatUnits(balanceUSDC, usdcDecimal)} / $10,504,441.72`}</p>
       </div>
       
+      {balanceToken == 'undefined' &&
       <p className='presaleform__p-bold'>{`Your Purchased $Soon = ${balanceToken && utils.formatUnits(balanceToken, tokenDecimal)}`}</p>
+      }
       <p id='fr-disclaimer'>*First round USDC only*</p>
 
       <div className="presaleform__form-inputwrapper">
