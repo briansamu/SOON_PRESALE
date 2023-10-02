@@ -9,11 +9,19 @@
 .bannersection-img {
   width: 20%;
   height: auto;
+  margin-bottom: -58px;
+  z-index: 10;
 }
 
 @media (max-width: 1400px) {
   .bannersection-img {
     width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bannersection-img {
+    margin-bottom: -55px;
   }
 }
 

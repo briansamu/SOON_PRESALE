@@ -20,7 +20,7 @@ const FooterSection = () => {
 
       <div className="footer-logos">
         <img className='footer-logo' src="./assets/soonlogo.png" alt="Soon Logo" />
-        <img className='footer-logo' src="./assets/soongraphic.png" alt="Soon Graphic Logo" />
+        <img className='footer-logo' src="./assets/WENLOGO03.png" alt="Soon Graphic Logo" />
       </div>
 
       <div className="footer-email">
