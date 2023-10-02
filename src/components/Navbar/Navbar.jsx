@@ -19,7 +19,7 @@ const Navbar = () => {
           <button onClick={showNavbar} className="navbar__close"><FontAwesomeIcon icon={faX} /></button>
           <ul>
             <li><a href="#">Features</a></li>
-            <li><a href="https://wen.finance/roadmap.png">Roadmap</a></li>
+            <li><a href="https://wen.finance/roadmap.png" target="_blank" rel="noreferrer">Roadmap</a></li>
             <li><a href="https://wen.finance/whitepaper.pdf" target="_blank" rel="noreferrer">Whitepaper</a></li>
             <li><a href="#">Hawaii Whitelist</a></li>
             <li><a href="#">Contact Us</a></li>
